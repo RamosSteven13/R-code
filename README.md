@@ -1,2 +1,2 @@
 # R code
-This is my code idk how to delete my other repository
+Dont forget to Load the packages xD
