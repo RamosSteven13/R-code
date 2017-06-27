@@ -1,2 +1,2 @@
 # R code
-Dont forget to Load the packages xD
+Dont forget to install the packages xD
