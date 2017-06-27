@@ -1,0 +1,18 @@
+Glass <- " Temp Type Time Mold
+1300 A 15 482
+1300 B 15 471
+1100 A 15 459
+1300 A 20 480
+1100 B 20 479
+1100 A 20 462
+1300 B 20 469
+1100 B 15 471"
+Glass <- read.table(textConnection(Glass), header = TRUE) 
+# closeAllConnections() 
+library("FrF2")
+
+ attach(Glass)
+cubePlot(Mold, Time, Type, Temp, main="Cube Plot",
+    cex.title=1.5,cex.lab=par("cex.lab"), cex.ax=par("cex.axis"),
+    cex.clab=1.2, size=0.3, round=NULL,
+    abbrev=4,y.margin.add=-0.2, modeled=TRUE)
